@@ -46,7 +46,8 @@ if (session_status() === PHP_SESSION_NONE) {
                 echo' <td>'. $row["user_name"].'</td>';
                 echo' <td>'. $row["user_email"].'</td>';
                 echo' <td>'. $row["creation_date"].'</td>';
-                echo'<td><a OnClick="return confirm(\" هل أنت متأكد؟ \");" href=delete.php?id='.$row["id"].'>delete</a> </td>';
+                echo'<td><a OnClick="return confirm(\" هل أنت متأكد؟ \");" href=delete.php?id='.$row["id"].'>حذف</a> </td>';
+                // echo'<td><a href=edit.php?id='.$row["id"].'>تعديل</a> </td>';
             echo' </tr>';
         }
         echo'</tbody>
